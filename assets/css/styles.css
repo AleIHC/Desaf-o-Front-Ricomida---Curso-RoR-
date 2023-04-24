@@ -1,0 +1,235 @@
+:root {
+    --danger: #dc3545;
+    --white: #fff;
+    --dark: #373A3C;  
+    --black: #000;
+    --light: #dddddd;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    border-width: 2px;
+    border-color: var(--dark);
+    opacity: 100%;
+}
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 900px;
+    }
+}
+
+/* Navbar */
+
+.bg-navbar-propio {
+    background-color: var(--dark);
+}
+
+.nav-title {
+    font-family: Lobster,sans-serif;
+}
+
+.nav-link {
+    color: var(--white);
+}
+
+/* Header */
+.header-info {
+    font-family: Cabin, sans-serif;
+}
+
+.header-info .header-photo img{
+    height: 100%;
+    width: 98%;
+}
+
+.header-info .header-title {
+    width: 60%;
+}
+
+.header-info .btn {
+    width: 23%;
+    background-color: var(--white);
+    border: var(--dark);
+}
+
+.carousel .carousel-indicators {
+    top: 85%;
+}
+
+.carousel .carousel-indicators .carousel-button{
+    background: var(--light);
+    border-radius: 50%;
+    width: 18px;
+    height: 1px; 
+}
+
+.carousel .carousel-indicators .active {
+    background: var(--dark);
+}
+
+@media (max-width: 600px) {
+    .carousel{
+        display: none;
+    }
+    header .hr-sm{
+        margin-top: 5%;
+    }
+    .header-info .header-photo img{
+        height: 100%;
+        width: 100%;
+    }
+    .header-info .header-title {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .header-info .header-subtitle {
+        text-align: center;
+    }
+    .header-info .btn {
+        width: 45%;
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-info .header-photo img{
+        height: 100%;
+        width: 95%;
+    }
+    .header-info .header-title {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .header-info .btn {
+        width: 46.8%;
+        font-size: 1em;
+    }
+    .carousel .carousel-indicators {
+        top: 80%;
+    }
+}
+
+    @media (min-width: 1800px) {
+        .header-info .header-photo img{
+            height: 100%;
+            width: 98%;
+        }
+}
+
+
+/* Recipe Section */
+.recipe {
+    font-family: Cabin, sans-serif;
+}
+
+.recipe-subtitle {
+    text-decoration: underline;
+    text-underline-offset: 0.6em;
+}
+
+.card {
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .related-recipes {
+        margin-bottom: 10%;
+    }
+    .recipe {
+        display: block;
+        font-size: 0.9em;
+        line-height: 2em;
+    }
+    .recipe-subtitle {
+        text-decoration: none;
+    }
+    .recipe #instructions {
+        margin-top: 4%;
+    }
+    .card {
+        height: 100%;
+        width: 100%;
+    }
+    .recipe-card{
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        height: 100%;
+        width: 100%;
+    }
+    .recipe-card{
+        margin-bottom: 5%;
+    }
+
+}
+
+/* Subscription Section */
+.subscription {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.logo {
+    font-family: Lobster,sans-serif;
+}
+
+.subscribe-text {
+    padding-top: 5%;
+}
+
+.subscribe-button .btn{
+    margin: 2% 0 10% 0;
+    width: 15%
+}
+
+@media (max-width: 600px) {
+    .subscribe-text {
+        padding-top: 25%;
+    }
+    .subscribe-text p{
+        padding-top: 10%;
+    }
+    .subscribe-button .btn{
+        margin: 10% 0 30% 0;
+        width: 100%;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: Lobster,sans-serif;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 5%;
+    }
+}
